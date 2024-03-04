@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "live-server",
+    "deploy": "gh-pages -d dist",
     "build": "rollup -c --watch"
   },
   "repository": {
