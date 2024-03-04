@@ -22,10 +22,10 @@ export class Search extends DivComponent {
           class="search__input" 
           value="${this.state.searchQuery ? this.state.searchQuery : ''}"
         />
-        <img src="../../../static/search.svg" alt="Иконка поиска" />
+        <img src="./static/search.svg" alt="Иконка поиска" />
       </div>
       <button aria-lable="Искать">
-        <img src="../../../static/search-white.svg" alt="Белая конка поиска" />
+        <img src="./static/search-white.svg" alt="Белая конка поиска" />
       </button>
     `;
     this.el.querySelector('button').addEventListener('click', this.search.apply(this));
