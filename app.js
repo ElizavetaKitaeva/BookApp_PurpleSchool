@@ -1126,16 +1126,16 @@
       this.el.classList.add('header');
       this.el.innerHTML = `
       <div>
-        <img src="../../../static/logo.svg" alt="Логотип" />
+        <img src="./static/logo.svg" alt="Логотип" />
       </div>
       <div class="menu">
         <a class="menu__item" href="#">
-          <img src="../../../static/search.svg" alt="Поиск" />
+          <img src="./static/search.svg" alt="Поиск" />
           Поиск книг
         </a>
 
         <a class="menu__item" href="#favorites">
-          <img src="../../../static/favorites.svg" alt="Избранное" />
+          <img src="./static/favorites.svg" alt="Избранное" />
           Избранное
           <div class="menu__counter">
             ${this.appState.favorites.length}
@@ -1187,8 +1187,8 @@
         <div class="card__footer">
           <button class="button__add ${existInFavorites ? 'button__active' : ''}">
             ${existInFavorites 
-              ? '<img src="../../../static/favorites.svg"/>' 
-              : '<img src="../../../static/favorite-white.svg"/>'}
+              ? '<img src="./static/favorites.svg"/>' 
+              : '<img src="./static/favorite-white.svg"/>'}
           /button>
         </div>
        </div>
@@ -1281,10 +1281,10 @@
           class="search__input" 
           value="${this.state.searchQuery ? this.state.searchQuery : ''}"
         />
-        <img src="../../../static/search.svg" alt="Иконка поиска" />
+        <img src="./static/search.svg" alt="Иконка поиска" />
       </div>
       <button aria-lable="Искать">
-        <img src="../../../static/search-white.svg" alt="Белая конка поиска" />
+        <img src="./static/search-white.svg" alt="Белая конка поиска" />
       </button>
     `;
       this.el.querySelector('button').addEventListener('click', this.search.apply(this));
